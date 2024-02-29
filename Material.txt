@@ -1,0 +1,95 @@
+Material:
+- ID (explain: Book ID, Magazine ID, Video Media ID, Music ID, Prints ID need to be able to distinguish)
+- typeId
+- Author 
+- Title
+- Edition 
+- Publisher 
+- Notes
+- Contents
+- ISBN
+- Subjects
+- Contributors
+- number of copies available
+- Shelving info
+- Genre
+- Brief Description
+- Age group
+
+MaterialType: 
+- materialTypeId
+- materialTypeName
+
+Magazine:
+- ID
+- Title
+- Volume 
+- Publisher 
+- Notes
+- Contents
+- Subjects
+- Media type(Paper, Electronic)
+- number of copies available
+- Shelving info
+- Genre
+- Brief Description
+- Age group
+
+Video Media:
+- ID
+- Title
+- Category (Film, TV series, Video games) 
+- Publisher 
+- Notes
+- Media type(DVD, Electronic)
+- Shelving info
+- Genre
+- Story
+- Age group
+
+Music:
+- ID
+- Album Title
+- Artist 
+- Notes
+- Media type(CD, Electronic)
+- Shelving info
+- Genre
+- Age group
+
+Prints:
+- ID
+- Author 
+- Title 
+- Publisher
+- Category (Images, Maps, Plans, Posters, Postcards)
+- Notes
+- Media type(Paper, Electronic)
+- number of copies available
+- Shelving info
+- Subject
+
+User 
+- ID
+- Expiration Date
+- Name
+- DOB
+- Address
+- Phone number
+- Email
+
+Reservation 
+- Reservation code
+- User ID 
+- Book/media ID
+- Date borrowed
+- Due date
+- Date returned(explain: When the date is null, the item is currently borrowed.)
+- Fee 
+- Payment date
+
+Hold requests
+- Request code
+- User ID 
+- Book/media ID
+- Status (Valid, Invalid)
